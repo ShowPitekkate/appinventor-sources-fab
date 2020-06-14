@@ -10,6 +10,7 @@ Table of Contents:
 
 * [Button](#Button)
 * [CheckBox](#CheckBox)
+* [ContextMenuItem](#ContextMenuItem)
 * [DatePicker](#DatePicker)
 * [Image](#Image)
 * [Label](#Label)
@@ -172,6 +173,15 @@ Table of Contents:
 
 {:id="CheckBox.LostFocus"} LostFocus()
 : Default LostFocus event handler.
+
+## ContextMenuItem  {#ContextMenuItem}
+
+### Properties  {#ContextMenuItem-Properties}
+
+{:.properties}
+
+{:id="ContextMenuItem.Text" .text} *Text*
+: Returns the text displayed by the menu item.
 
 ## DatePicker  {#DatePicker}
 

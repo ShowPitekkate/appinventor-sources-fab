@@ -162,6 +162,10 @@ public final class ListView extends AndroidViewComponent implements AdapterView.
     return listViewLayout;
   }
 
+  public android.widget.ListView getListView() {
+    return view;
+  }
+
   /**
   * Sets the height of the listView on the screen
   * @param height for height length
