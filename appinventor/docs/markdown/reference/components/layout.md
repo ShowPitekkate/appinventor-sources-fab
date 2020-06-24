@@ -12,6 +12,7 @@ Table of Contents:
 * [HorizontalArrangement](#HorizontalArrangement)
 * [HorizontalScrollArrangement](#HorizontalScrollArrangement)
 * [Menu](#Menu)
+* [PopupMenu](#PopupMenu)
 * [TableArrangement](#TableArrangement)
 * [VerticalArrangement](#VerticalArrangement)
 * [VerticalScrollArrangement](#VerticalScrollArrangement)
@@ -118,6 +119,15 @@ Table of Contents:
 
 {:id="Menu.ItemSelected"} ItemSelected(*itemIndex*{:.number},*item*{:.component})
 : Event raised when user selects an item from the options menu.
+
+## PopupMenu  {#PopupMenu}
+
+### Properties  {#PopupMenu-Properties}
+
+{:.properties}
+
+{:id="PopupMenu.ComponentSelector" .component} *ComponentSelector*
+: 
 
 ## TableArrangement  {#TableArrangement}
 
