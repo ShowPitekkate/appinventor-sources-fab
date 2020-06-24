@@ -26,6 +26,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.VisibleForTesting;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -146,6 +147,7 @@ public class Form extends AppInventorCompatActivity
   protected static Form activeForm;
 
   private Menu menu = null;
+  private FloatingActionButton floatingActionButton;
 
   private float deviceDensity;
   private float compatScalingFactor;
