@@ -1,6 +1,7 @@
 animated-vector-drawable.jar
 appcompat-v7.jar
 asynclayoutinflater.jar
+cardview-v7.jar
 collections.jar
 common.jar
 constraint-layout.jar
@@ -8,6 +9,7 @@ constraint-layout-solver.jar
 coordinatorlayout.jar
 cursoradapter.jar
 customview.jar
+design.jar
 documentfile.jar
 drawerlayout.jar
 interpolator.jar
