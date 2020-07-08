@@ -36,6 +36,9 @@ Table of Contents:
 {:id="Button.BackgroundColor" .color} *BackgroundColor*
 : Returns the button's background color
 
+{:id="Button.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="Button.Enabled" .boolean} *Enabled*
 : If set, user can tap Button to cause action.
 
@@ -118,6 +121,9 @@ Table of Contents:
 
 {:id="CheckBox.Checked" .boolean} *Checked*
 : Returns true if the checkbox is checked.
+
+{:id="CheckBox.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="CheckBox.Enabled" .boolean} *Enabled*
 : Returns true if the CheckBox is active and clickable.
@@ -204,6 +210,9 @@ Table of Contents:
 
 {:id="DatePicker.BackgroundColor" .color} *BackgroundColor*
 : Returns the button's background color
+
+{:id="DatePicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="DatePicker.Day" .number .ro .bo} *Day*
 : the Day of the month that was last picked using the DatePicker.
@@ -310,6 +319,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 {:id="Image.Animation" .text .wo .bo} *Animation*
 : This is a limited form of animation that can attach a small number of motion types to images.  The allowable motions are ScrollRightSlow, ScrollRight, ScrollRightFast, ScrollLeftSlow, ScrollLeft, ScrollLeftFast, and Stop
 
+{:id="Image.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="Image.Height" .number .bo} *Height*
 : Specifies the vertical height of the Image, measured in pixels.
 
@@ -346,6 +358,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 {:id="Label.BackgroundColor" .color} *BackgroundColor*
 : Returns the label's background color as an alpha-red-green-blue
  integer.
+
+{:id="Label.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="Label.FontBold" .boolean .do} *FontBold*
 : Returns true if the label's text should be bold.
@@ -409,6 +424,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 
 {:id="ListPicker.BackgroundColor" .color} *BackgroundColor*
 : Returns the button's background color
+
+{:id="ListPicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="ListPicker.Elements" .list .bo} *Elements*
 : Elements property getter method
@@ -522,6 +540,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 
 {:id="ListView.BackgroundColor" .color} *BackgroundColor*
 : The color of the listview background.
+
+{:id="ListView.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="ListView.Elements" .list .bo} *Elements*
 : List of text elements to show in the ListView.  This willsignal an error if the elements are not text strings.
@@ -670,6 +691,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 
 {:id="PasswordTextBox.BackgroundColor" .color} *BackgroundColor*
 : The background color of the input box.  You can choose a color by name in the Designer or in the Blocks Editor.  The default background color is 'default' (shaded 3-D look).
+
+{:id="PasswordTextBox.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="PasswordTextBox.Enabled" .boolean} *Enabled*
 : Whether the user can enter text into the PasswordTextBox.  By default, this is true.
@@ -867,6 +891,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 {:id="Slider.ColorRight" .color} *ColorRight*
 : The color of slider to the left of the thumb.
 
+{:id="Slider.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="Slider.HeightPercent" .number .wo .bo} *HeightPercent*
 : Specifies the vertical height of the Slider as a percentage of the height of the Screen.
 
@@ -903,6 +930,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 ### Properties  {#Spinner-Properties}
 
 {:.properties}
+
+{:id="Spinner.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="Spinner.Elements" .list .bo} *Elements*
 : returns a list of text elements to be picked from.
@@ -957,6 +987,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 {:id="Switch.BackgroundColor" .color} *BackgroundColor*
 : Returns the background color of the Switch as an alpha-red-green-blue
  integer.
+
+{:id="Switch.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="Switch.Enabled" .boolean} *Enabled*
 : Returns true if the Switch is active and clickable.
@@ -1039,6 +1072,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 {:id="TextBox.BackgroundColor" .color} *BackgroundColor*
 : The background color of the input box.  You can choose a color by name in the Designer or in the Blocks Editor.  The default background color is 'default' (shaded 3-D look).
 
+{:id="TextBox.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="TextBox.Enabled" .boolean} *Enabled*
 : Whether the user can enter text into the TextBox.  By default, this is true.
 
@@ -1120,6 +1156,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 
 {:id="TimePicker.BackgroundColor" .color} *BackgroundColor*
 : Returns the button's background color
+
+{:id="TimePicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="TimePicker.Enabled" .boolean} *Enabled*
 : If set, user can tap TimePicker to cause action.
@@ -1215,6 +1254,9 @@ Valid values for the month field are 1-12 and 1-31 for the day field.
 ### Properties  {#WebViewer-Properties}
 
 {:.properties}
+
+{:id="WebViewer.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="WebViewer.CurrentPageTitle" .text .ro .bo} *CurrentPageTitle*
 : Title of the page currently viewed

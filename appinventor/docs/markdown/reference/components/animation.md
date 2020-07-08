@@ -119,6 +119,9 @@ Table of Contents:
 {:id="Canvas.BackgroundImage" .text} *BackgroundImage*
 : The name of a file containing the background image for the canvas
 
+{:id="Canvas.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="Canvas.ExtendMovesOutsideCanvas" .boolean} *ExtendMovesOutsideCanvas*
 : Determines whether moves can extend beyond the canvas borders.   Default is false. This should normally be false, and the property is provided for backwards compatibility.
 

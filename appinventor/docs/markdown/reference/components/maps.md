@@ -108,6 +108,9 @@ Table of Contents:
 
 {:.properties}
 
+{:id="FeatureCollection.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="FeatureCollection.Features" .list .bo} *Features*
 : The list of features placed on this FeatureCollection. This list also includes any features created by calls to FeatureFromDescription
 
@@ -268,6 +271,9 @@ Table of Contents:
 
 {:id="Map.CenterFromString" .text .wo} *CenterFromString*
 : <p>Set the initial center coordinate of the map. The value is specified as a comma-separated pair of decimal latitude and longitude coordinates, for example, <code>42.359144, -71.093612</code>.</p><p>In blocks code, it is recommended for performance reasons to use SetCenter with numerical latitude and longitude rather than convert to the string representation for use with this property.</p>
+
+{:id="Map.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="Map.EnablePan" .boolean} *EnablePan*
 : Enable two-finger panning of the Map

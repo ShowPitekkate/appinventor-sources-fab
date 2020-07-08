@@ -31,6 +31,9 @@ Table of Contents:
 {:id="ContactPicker.ContactUri" .text .ro .bo} *ContactUri*
 : URI that specifies the location of the contact on the device.
 
+{:id="ContactPicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="ContactPicker.EmailAddress" .text .ro .bo} *EmailAddress*
 : EmailAddress property getter method.
 
@@ -139,6 +142,9 @@ Table of Contents:
 {:id="EmailPicker.BackgroundColor" .color} *BackgroundColor*
 : The background color of the input box.  You can choose a color by name in the Designer or in the Blocks Editor.  The default background color is 'default' (shaded 3-D look).
 
+{:id="EmailPicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="EmailPicker.Enabled" .boolean} *Enabled*
 : Whether the user can enter text into the EmailPicker.  By default, this is true.
 
@@ -246,6 +252,9 @@ Table of Contents:
 
 {:id="PhoneNumberPicker.ContactUri" .text .ro .bo} *ContactUri*
 : URI that specifies the location of the contact on the device.
+
+{:id="PhoneNumberPicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="PhoneNumberPicker.EmailAddress" .text .ro .bo} *EmailAddress*
 : EmailAddress property getter method.

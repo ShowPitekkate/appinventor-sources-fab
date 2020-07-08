@@ -19,13 +19,6 @@ Table of Contents:
 
 ## ContextMenu  {#ContextMenu}
 
-### Properties  {#ContextMenu-Properties}
-
-{:.properties}
-
-{:id="ContextMenu.ComponentSelector" .component .wo} *ComponentSelector*
-: 
-
 ## HorizontalArrangement  {#HorizontalArrangement}
 
 ### Properties  {#HorizontalArrangement-Properties}
@@ -40,6 +33,9 @@ Table of Contents:
 
 {:id="HorizontalArrangement.BackgroundColor" .color} *BackgroundColor*
 : Returns the background color of the HorizontalArrangement
+
+{:id="HorizontalArrangement.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="HorizontalArrangement.Height" .number .bo} *Height*
 : Specifies the vertical height of the HorizontalArrangement, measured in pixels.
@@ -73,6 +69,9 @@ Table of Contents:
 
 {:id="HorizontalScrollArrangement.BackgroundColor" .color} *BackgroundColor*
 : Returns the background color of the HorizontalScrollArrangement
+
+{:id="HorizontalScrollArrangement.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="HorizontalScrollArrangement.Height" .number .bo} *Height*
 : Specifies the vertical height of the HorizontalScrollArrangement, measured in pixels.
@@ -138,6 +137,9 @@ Table of Contents:
 {:id="TableArrangement.Columns" .number .do} *Columns*
 : Columns property getter method.
 
+{:id="TableArrangement.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="TableArrangement.Height" .number .bo} *Height*
 : Specifies the vertical height of the TableArrangement, measured in pixels.
 
@@ -171,6 +173,9 @@ Table of Contents:
 {:id="VerticalArrangement.BackgroundColor" .color} *BackgroundColor*
 : Returns the background color of the VerticalArrangement
 
+{:id="VerticalArrangement.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="VerticalArrangement.Height" .number .bo} *Height*
 : Specifies the vertical height of the VerticalArrangement, measured in pixels.
 
@@ -203,6 +208,9 @@ Table of Contents:
 
 {:id="VerticalScrollArrangement.BackgroundColor" .color} *BackgroundColor*
 : Returns the background color of the VerticalScrollArrangement
+
+{:id="VerticalScrollArrangement.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="VerticalScrollArrangement.Height" .number .bo} *Height*
 : Specifies the vertical height of the VerticalScrollArrangement, measured in pixels.

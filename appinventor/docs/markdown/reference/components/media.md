@@ -70,6 +70,9 @@ Table of Contents:
 {:id="ImagePicker.BackgroundColor" .color} *BackgroundColor*
 : Returns the button's background color
 
+{:id="ImagePicker.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
+
 {:id="ImagePicker.Enabled" .boolean} *Enabled*
 : If set, user can tap ImagePicker to cause action.
 
@@ -355,6 +358,9 @@ Table of Contents:
 ### Properties  {#VideoPlayer-Properties}
 
 {:.properties}
+
+{:id="VideoPlayer.ContextMenuSelector" .component .wo} *ContextMenuSelector*
+: 
 
 {:id="VideoPlayer.FullScreen" .boolean .bo} *FullScreen*
 : Returns whether the VideoPlayer's video is currently being
