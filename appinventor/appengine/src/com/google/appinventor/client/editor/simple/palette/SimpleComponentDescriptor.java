@@ -14,6 +14,7 @@ import com.google.appinventor.client.editor.simple.components.MockBall;
 import com.google.appinventor.client.editor.simple.components.MockButton;
 import com.google.appinventor.client.editor.simple.components.MockCanvas;
 import com.google.appinventor.client.editor.simple.components.MockCheckBox;
+import com.google.appinventor.client.editor.simple.components.MockSidebar;
 import com.google.appinventor.client.editor.simple.components.MockSwitch;
 import com.google.appinventor.client.editor.simple.components.MockCircle;
 import com.google.appinventor.client.editor.simple.components.MockCloudDB;
@@ -140,6 +141,7 @@ public final class SimpleComponentDescriptor {
     bundledImages.put("images/phoneip.png", images.phonestatusComponent());
     bundledImages.put("images/phoneCall.png", images.phonecall());
     bundledImages.put("images/player.png", images.player());
+    bundledImages.put("images/sidebar.png", images.sidebar());
     bundledImages.put("images/soundEffect.png", images.soundeffect());
     bundledImages.put("images/soundRecorder.png", images.soundRecorder());
     bundledImages.put("images/speechRecognizer.png", images.speechRecognizer());
@@ -461,6 +463,8 @@ public final class SimpleComponentDescriptor {
       return new MockPolygon(editor);
     } else if (name.equals(MockRectangle.TYPE)) {
       return new MockRectangle(editor);
+    } else if (name.equals(MockSidebar.TYPE)) {
+      return new MockSidebar(editor);
     } else if (name.equals(MockFeatureCollection.TYPE)) {
       return new MockFeatureCollection(editor);
     } else {

@@ -10,6 +10,7 @@ Table of Contents:
 
 * [HorizontalArrangement](#HorizontalArrangement)
 * [HorizontalScrollArrangement](#HorizontalScrollArrangement)
+* [Sidebar](#Sidebar)
 * [TableArrangement](#TableArrangement)
 * [VerticalArrangement](#VerticalArrangement)
 * [VerticalScrollArrangement](#VerticalScrollArrangement)
@@ -156,6 +157,30 @@ None
 
 
 ### Methods  {#HorizontalScrollArrangement-Methods}
+
+{:.methods}
+None
+
+
+## Sidebar  {#Sidebar}
+
+Component for Sidebar
+
+
+
+### Properties  {#Sidebar-Properties}
+
+{:.properties}
+None
+
+
+### Events  {#Sidebar-Events}
+
+{:.events}
+None
+
+
+### Methods  {#Sidebar-Methods}
 
 {:.methods}
 None

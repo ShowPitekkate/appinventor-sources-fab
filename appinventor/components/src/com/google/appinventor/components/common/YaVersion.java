@@ -1137,6 +1137,10 @@ public class YaVersion {
 
   public static final int SHARING_COMPONENT_VERSION = 1;
 
+  // For SIDEBAR_COMPONENT_VERSION 1:
+  // - Initial sidebar implementation
+  public static final int SIDEBAR_COMPONENT_VERSION = 1;
+
   // For SLIDER_COMPONENT_VERSION 1:
   // - Initial version.
   // For SLIDER_COMPONENT_VERSION 2:

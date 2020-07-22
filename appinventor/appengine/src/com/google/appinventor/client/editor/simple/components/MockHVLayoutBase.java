@@ -317,6 +317,10 @@ abstract class MockHVLayoutBase extends MockLayout {
     int usedHeight = 0;
     int countFillParent = 0;
     for (MockComponent child : containerLayoutInfo.visibleChildren) {
+      // skip sidebar when calculating height constraints
+      if(child.isSidebar()) {
+        continue;
+      }
       usedHeight += COMPONENT_SPACING;
       LayoutInfo childLayoutInfo = containerLayoutInfo.layoutInfoMap.get(child);
       int childHeight = childLayoutInfo.height;
@@ -395,12 +399,21 @@ abstract class MockHVLayoutBase extends MockLayout {
     // iterate through the children, setting the leftX and topY positions
 
     for (MockComponent child : containerLayoutInfo.visibleChildren) {
-      dividerLocations[index] = topY;
-      topY += COMPONENT_SPACING;
-
       LayoutInfo childLayoutInfo = containerLayoutInfo.layoutInfoMap.get(child);
       int childWidthWithBorder = childLayoutInfo.width + BORDER_SIZE;
       int childHeightWithBorder = childLayoutInfo.height + BORDER_SIZE;
+
+      if(child.isSidebar()) {
+        // always position mock sidebar at top-left corner
+        container.setChildSizeAndPosition(child, childLayoutInfo,
+                0,
+                0);
+        index++;
+        continue;
+      }
+
+      dividerLocations[index] = topY;
+      topY += COMPONENT_SPACING;
 
       // leftX is where the left edge of the child should be.  For a vertical alignment
       // it's either zero (left align) or set so the center of child is at the centered
