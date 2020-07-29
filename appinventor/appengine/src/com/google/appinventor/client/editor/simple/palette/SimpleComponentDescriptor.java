@@ -117,6 +117,7 @@ public final class SimpleComponentDescriptor {
     bundledImages.put("images/web.png", images.web());
     bundledImages.put("images/mediastore.png", images.mediastore());
     bundledImages.put("images/sharing.png", images.sharingComponent());
+    bundledImages.put("images/sidebar.png", images.sidebar());
     bundledImages.put("images/spinner.png", images.spinner());
     bundledImages.put("images/listView.png", images.listview());
     bundledImages.put("images/yandex.png", images.yandex());
@@ -424,6 +425,12 @@ public final class SimpleComponentDescriptor {
       return new MockRectangle(editor);
     } else if (name.equals(MockFeatureCollection.TYPE)) {
       return new MockFeatureCollection(editor);
+    } else if (name.equals(MockSidebar.TYPE)) {
+      return new MockSidebar(editor);
+    } else if (name.equals(MockSidebarHeader.TYPE)) {
+      return new MockSidebarHeader(editor);
+    } else if (name.equals(MockSidebarItem.TYPE)) {
+      return new MockSidebarItem(editor);
     } else {
       // TODO(user): add 3rd party mock component proxy here
       throw new UnsupportedOperationException("unknown component: " + name);
