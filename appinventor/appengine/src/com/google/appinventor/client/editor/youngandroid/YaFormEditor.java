@@ -1008,6 +1008,10 @@ public final class YaFormEditor extends SimpleEditor implements FormChangeListen
         // don't interfere with copy/pasting input
         return false;
       }
+      if ($wnd.getSelection && $wnd.getSelection() && $wnd.getSelection().toString() != '') {
+        // user is copying some other selection on the page
+        return false;
+      }
       if (!editor.@com.google.appinventor.client.editor.FileEditor::isActiveEditor()()) {
         // don't copy/paste in non-active editor
         return false;
@@ -1100,7 +1104,7 @@ public final class YaFormEditor extends SimpleEditor implements FormChangeListen
       YaBlocksEditor blocksEditor) {
     JsArrayString blocks = blocksEditor.getTopBlocksForComponentByName(component.getName());
     if (component instanceof MockContainer) {
-      for (MockComponent child : ((MockContainer) component).getChildren()) {
+      for (MockComponent child : component.getChildren()) {
         JsArrayString childBlocks = getSelectedComponentBlocks(child, blocksEditor);
         for (int i = 0; i < childBlocks.length(); i++) {
           blocks.push(childBlocks.get(i));

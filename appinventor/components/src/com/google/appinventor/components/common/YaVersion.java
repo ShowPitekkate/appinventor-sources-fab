@@ -512,8 +512,10 @@ public class YaVersion {
   // - YANDEX_COMPONENT_VERSION was incremented to 2.
   // For YOUNG_ANDROID_VERSION 207:
   // - BLOCKS_LANGUAGE_VERSION was incremented to 32
-
-  public static final int YOUNG_ANDROID_VERSION = 207;
+  // For YOUNG_ANDROID_VERSION 208:
+  // - FILE_COMPONENT_VERSION was incremented to 3
+  // - BLOCKS_LANGUAGE_VERSION was incremented to 33
+  public static final int YOUNG_ANDROID_VERSION = 208;
 
   // ............................... Blocks Language Version Number ...............................
 
@@ -595,8 +597,9 @@ public class YaVersion {
   // - The replace-all-mappings block was added.
   // For BLOCKS_LANGUAGE_VERSION 32
   // - The and/or blocks gained mutators.
-
-  public static final int BLOCKS_LANGUAGE_VERSION = 32;
+  // For BLOCKS_LANGUAGE_VERSION 33
+  // - Added "contains any" and "contains all" options to the text contains block.
+  public static final int BLOCKS_LANGUAGE_VERSION = 33;
 
   // ................................. Target SDK Version Number ..................................
 
@@ -789,6 +792,14 @@ public class YaVersion {
   // - The ContactUri property was added
   public static final int CONTACTPICKER_COMPONENT_VERSION = 6;
 
+  // For CONTEXT_MENU_COMPONENT_VERSION 1:
+  // - Initial Context Menu implementation using Android Menu
+  public static final int CONTEXT_MENU_COMPONENT_VERSION = 1;
+
+  // For CONTEXT_MENUITEM_COMPONENT_VERSION 1:
+  // - Initial Context MenuItem implementation using Android MenuItem
+  public static final int CONTEXT_MENUITEM_COMPONENT_VERSION = 1;
+
   // For DATEPICKER_COMPONENT_VERSION 2:
   // The datepicker dialog was updated to show the current date
   // instead of the last set date by default.
@@ -816,7 +827,13 @@ public class YaVersion {
 
   // For FILE_COMPONENT_VERSION 2:
   // - The AfterFileSaved event was added.
-  public static final int FILE_COMPONENT_VERSION = 2;
+  // For FILE_COMPONENT_VERSION 3:
+  // - The LegacyMode property was added.
+  public static final int FILE_COMPONENT_VERSION = 3;
+
+  // For FLOATING_ACTION_BUTTON_COMPONENT_VERSION 1:
+  // - Initial FloatingActionButton implementation
+  public static final int FLOATING_ACTION_BUTTON_COMPONENT_VERSION = 1;
 
   // For FORM_COMPONENT_VERSION 2:
   // - The Screen.Scrollable property was added.
@@ -1022,6 +1039,14 @@ public class YaVersion {
   // - Initial Navigation implementation
   public static final int NAVIGATION_COMPONENT_VERSION = 1;
 
+  // For MENU_COMPONENT_VERSION 1:
+  // - Initial Menu implementation using Android Menu
+  public static final int MENU_COMPONENT_VERSION = 1;
+
+  // For MENUITEM_COMPONENT_VERSION 1:
+  // - Initial MenuItem implementation using Android MenuItem
+  public static final int MENUITEM_COMPONENT_VERSION = 1;
+
   // For NEARFIELD_COMPONENT_VERSION 1:
   public static final int NEARFIELD_COMPONENT_VERSION = 1;
 
@@ -1078,7 +1103,9 @@ public class YaVersion {
   // - Added RequestFocus Function (via TextBoxBase)
   // For PASSWORDTEXTBOX_COMPONENT_VERSION 4:
   // - Added PasswordVisible property
-  public static final int PASSWORDTEXTBOX_COMPONENT_VERSION = 4;
+  // For For PASSWORDTEXTBOX_COMPONENT_VERSION 5:
+  // - Added NumbersOnly property
+  public static final int PASSWORDTEXTBOX_COMPONENT_VERSION = 5;
 
   // For PEDOMETER_COMPONENT_VERSION 2:
   // - The step sensing algorithm was updated to be more accurate.
@@ -1129,6 +1156,10 @@ public class YaVersion {
   // - Added fill and stroke opacity properties
   public static final int POLYGON_COMPONENT_VERSION = 2;
 
+  // For POPUP_MENU_COMPONENT_VERSION 1:
+  // - Initial Popup Menu implementation using Android Menu
+  public static final int POPUP_MENU_COMPONENT_VERSION = 1;
+
   // For RECTANGLE_COMPONENT_VERSION 1:
   // - Initial Rectangle implementation for Maps
   // For RECTANGLE_COMPONENT_VERSION 2:
@@ -1136,6 +1167,18 @@ public class YaVersion {
   public static final int RECTANGLE_COMPONENT_VERSION = 2;
 
   public static final int SHARING_COMPONENT_VERSION = 1;
+
+  // For SIDEBAR_COMPONENT_VERSION 1:
+  // - Initial sidebar implementation
+  public static final int SIDEBAR_COMPONENT_VERSION = 1;
+
+  // For SIDEBARHEADER_COMPONENT_VERSION 1:
+  // - Initial sidebar header implementation
+  public static final int SIDEBAR_HEADER_COMPONENT_VERSION = 1;
+
+  // For SIDEBAR_ITEM_COMPONENT_VERSION 1:
+  // - Initial sidebar item implementation
+  public static final int SIDEBAR_ITEM_COMPONENT_VERSION = 1;
 
   // For SLIDER_COMPONENT_VERSION 1:
   // - Initial version.
@@ -1397,11 +1440,11 @@ public class YaVersion {
 
   public static final String ACCEPTABLE_COMPANION_PACKAGE = "edu.mit.appinventor.aicompanion3";
 
-  public static final String PREFERRED_COMPANION = "2.59";
+  public static final String PREFERRED_COMPANION = "2.60";
   public static final String COMPANION_UPDATE_URL = "";
   public static final String COMPANION_UPDATE_URL1 = "";
   public static final String COMPANION_UPDATE_EMULATOR_URL = "";
-  public static final String [] ACCEPTABLE_COMPANIONS = { "2.59", "2.59u" };
+  public static final String [] ACCEPTABLE_COMPANIONS = { "2.60", "2.60u" };
 
   // Splash Screen Values
   public static final int SPLASH_SURVEY = 1;

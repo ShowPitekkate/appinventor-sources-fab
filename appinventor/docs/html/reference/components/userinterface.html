@@ -133,11 +133,13 @@
 <ul>
   <li><a href="#Button">Button</a></li>
   <li><a href="#CheckBox">CheckBox</a></li>
+  <li><a href="#ContextMenuItem">ContextMenuItem</a></li>
   <li><a href="#DatePicker">DatePicker</a></li>
   <li><a href="#Image">Image</a></li>
   <li><a href="#Label">Label</a></li>
   <li><a href="#ListPicker">ListPicker</a></li>
   <li><a href="#ListView">ListView</a></li>
+  <li><a href="#MenuItem">MenuItem</a></li>
   <li><a href="#Notifier">Notifier</a></li>
   <li><a href="#PasswordTextBox">PasswordTextBox</a></li>
   <li><a href="#Screen">Screen</a></li>
@@ -297,6 +299,26 @@
 <h3 id="CheckBox-Methods">Methods</h3>
 
 <p class="methods">None</p>
+
+<h2 id="ContextMenuItem">ContextMenuItem</h2>
+
+<h3 id="ContextMenuItem-Properties">Properties</h3>
+
+<dl class="properties">
+  <dt id="ContextMenuItem.Enabled" class="boolean"><em>Enabled</em></dt>
+  <dd>If true, user can tap menu item to cause action.</dd>
+  <dt id="ContextMenuItem.Text" class="text"><em>Text</em></dt>
+  <dd>Returns the text displayed by the menu item.</dd>
+  <dt id="ContextMenuItem.Visible" class="boolean"><em>Visible</em></dt>
+  <dd>Returns true if the menu item is visible, false otherwise.</dd>
+</dl>
+
+<h3 id="ContextMenuItem-Events">Events</h3>
+
+<dl class="events">
+  <dt id="ContextMenuItem.Click">Click()</dt>
+  <dd>Event raised when user selects this menu item.</dd>
+</dl>
 
 <h2 id="DatePicker">DatePicker</h2>
 
@@ -694,6 +716,30 @@ Valid values for the month field are 1-12 and 1-31 for the day field.</dd>
 
 <p class="methods">None</p>
 
+<h2 id="MenuItem">MenuItem</h2>
+
+<h3 id="MenuItem-Properties">Properties</h3>
+
+<dl class="properties">
+  <dt id="MenuItem.Enabled" class="boolean"><em>Enabled</em></dt>
+  <dd>If true, user can tap menu item to cause action.</dd>
+  <dt id="MenuItem.Icon" class="text"><em>Icon</em></dt>
+  <dd>Path of the icon to display for this menu item.</dd>
+  <dt id="MenuItem.ShowOnActionBar" class="boolean"><em>ShowOnActionBar</em></dt>
+  <dd>Returns true if the menu item is shown on action bar, false otherwise.</dd>
+  <dt id="MenuItem.Text" class="text"><em>Text</em></dt>
+  <dd>Returns the text displayed by the menu item.</dd>
+  <dt id="MenuItem.Visible" class="boolean"><em>Visible</em></dt>
+  <dd>Returns true if the menu item is visible, false otherwise.</dd>
+</dl>
+
+<h3 id="MenuItem-Events">Events</h3>
+
+<dl class="events">
+  <dt id="MenuItem.Click">Click()</dt>
+  <dd>Event raised when user selects this menu item.</dd>
+</dl>
+
 <h2 id="Notifier">Notifier</h2>
 
 <p>The Notifier component displays alert messages and creates Android log entries through
@@ -814,6 +860,11 @@ Valid values for the month field are 1-12 and 1-31 for the day field.</dd>
  of the <a href="userinterface.html#Screen.Height"><code class="highlighter-rouge">Screen</code>’s <code class="highlighter-rouge">Height</code></a>.</dd>
   <dt id="PasswordTextBox.Hint" class="text"><em>Hint</em></dt>
   <dd><code class="highlighter-rouge">PasswordTextBox</code> hint for the user.</dd>
+  <dt id="PasswordTextBox.NumbersOnly" class="boolean"><em>NumbersOnly</em></dt>
+  <dd>If true, then this <code class="highlighter-rouge">PasswordTextBox</code><code class="highlighter-rouge"> accepts only numbers as keyboard input. Numbers can include a
+ decimal point and an optional leading minus sign. This applies to keyboard input only. Even
+ if </code>NumbersOnly<code class="highlighter-rouge"> is true, you can set the text to anything at all using the
+ [</code>Text`](#PasswordTextBox.Text) property.</dd>
   <dt id="PasswordTextBox.PasswordVisible" class="boolean bo"><em>PasswordVisible</em></dt>
   <dd>Specifies whether the password is hidden (default) or shown.</dd>
   <dt id="PasswordTextBox.Text" class="text"><em>Text</em></dt>
@@ -1454,6 +1505,14 @@ having dark grey components.</li>
 </code></pre></div></div>
 <p>Calling <code class="highlighter-rouge">setWebViewString</code> from JavaScript will also run the <a href="#WebViewer.WebViewStringChange"><code class="highlighter-rouge">WebViewStringChange</code></a>
  event so that the blocks can handle when the <a href="#WebViewer.WebViewString"><code class="highlighter-rouge">WebViewString</code></a> property changes.</p>
+
+<p>Beginning with release nb184a, you can specify a HomeUrl beginning with <code class="highlighter-rouge">http://localhost/</code>
+ to reference assets both in the Companion and in compiled apps. Previously, apps needed to use
+ <code class="highlighter-rouge">file:///android_asset/</code> in compiled apps and <code class="highlighter-rouge">/sdcard/AppInventor/assets/</code> in the Companion.
+ Both of these options will continue to work but the <code class="highlighter-rouge">http://localhost/</code> approach will work in
+ both scenarios. You may also use “file:///appinventor_asset/” which provides more security by
+ preventing the use of asynchronous requests from JavaScript in your assets from going out to the
+ web.</p>
 
 <h3 id="WebViewer-Properties">Properties</h3>
 
