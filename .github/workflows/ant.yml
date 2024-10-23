@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 8
+          distribution: 'zulu'
       - name: 'Checkout submodules'
         run: git submodule update --init --recursive
       - name: 'Install 32-bit dependencies'
